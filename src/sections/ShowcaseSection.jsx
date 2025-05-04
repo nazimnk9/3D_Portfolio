@@ -11,15 +11,15 @@ const ShowcaseSection = () => {
     const project2Ref = useRef(null)
     const project3Ref = useRef(null)
 
-    
-    
+
+
     useGSAP(() => {
         const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
-        projects.forEach((card,index) =>{
+        projects.forEach((card, index) => {
             gsap.fromTo(
                 card,
                 {
-                    y:50,
+                    y: 50,
                     opacity: 0,
                 },
                 {
